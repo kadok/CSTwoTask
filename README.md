@@ -110,3 +110,8 @@ http://localhost:5000
 ```
 
 3. Faça perguntas para sua base de dados!
+
+4. Para executar os testes unitários
+```bash
+pytest -s -v
+```
