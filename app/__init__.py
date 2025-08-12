@@ -4,6 +4,9 @@ from .config import Config
 from .routes import bp
 
 def create_app():
+    """
+        Cria a aplicação Flask
+    """
     #app = Flask(__name__, static_folder="static")
     app = Flask(__name__, template_folder='static')
     app.config.from_object(Config)

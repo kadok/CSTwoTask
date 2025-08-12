@@ -40,18 +40,25 @@ TIPO_COMBUSTIVEL = ["Gasolina", "Álcool", "Diesel", "Híbrido", "Flex", "Elétr
 CAMBIO = ["Manual", "Automático"]
 SITUACAO = ["Novo", "Usado", "Seminovo"]
 
-# Função para gerar potência do motor
+
 def gerar_motor():
+    """
+        Função para gerar potência do motor
+    """
     cilindradas = random.choice([1.0, 1.4, 1.6, 1.8, 2.0, 3.0])
     potencia_hp = random.randint(70, 400)
     return f"{cilindradas}L {potencia_hp}cv"
 
 def create_database(engine):
-    """Cria a tabela no banco (se não existir)."""
+    """
+        Cria a tabela no banco (se não existir).
+    """
     Base.metadata.create_all(bind=engine)
 
 def populate_database(session, n=100):
-    """Popula a tabela carros com dados fake."""
+    """
+        Popula a tabela carros com dados fake.
+    """
     for _ in range(n):
         marca = random.choice(list(MARCAS_MODELOS.keys()))
         modelo = random.choice(MARCAS_MODELOS[marca])

@@ -3,6 +3,9 @@ from sqlalchemy.ext.declarative import declarative_base
 from app.data.database import Base
 
 class Car(Base):
+    """
+        Classe que representa a tabela de carros e seus atributos
+    """
     __tablename__ = "carros"
 
     id               = Column(Integer, primary_key=True, autoincrement=True)

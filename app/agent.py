@@ -5,7 +5,9 @@ from app.data.database import SessionLocal
 from app.data.models import Car
 
 def create_agent():
-    """Cria agente MCP para consultas LLM + DB."""
+    """
+        Cria agente MCP para consultas LLM + DB.
+    """
     if not Config.DB_LINK:
         raise ValueError("DB_LINK não definido no .env")
 
@@ -27,7 +29,9 @@ def create_agent():
     return MCPAgent(llm=llm, client=client, max_steps=30)
 
 async def run_agent_query(query: str):
-    """Executa consulta no MCP Agent."""
+    """
+        Executa consulta no MCP Agent.
+    """
     agent = create_agent()
     full_query = (
         "A tabela é `carros`, com colunas `marca`, `modelo`, `cor`, `ano`, `combustivel`, `preco`. "
