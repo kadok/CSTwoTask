@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         userInput.style.height = 'auto';
         
         // Update status
-        updateStatus('thinking', 'Processing query...');
+        updateStatus('thinking', 'Processando...');
         
         // Disable input while processing
         userInput.disabled = true;
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
             userInput.focus();
             
             // Update status
-            updateStatus('online', 'Ready');
+            updateStatus('online', 'Pronto');
             
             // Scroll to bottom
             scrollToBottom();
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // Add error message
-            addMessage('Sorry, there was a network error. Please try again.', 'system');
+            addMessage('Desculpe, ocorreu um erro de rede. Tente novammente.', 'system');
             
             // Re-enable input
             userInput.disabled = false;
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
             userInput.focus();
             
             // Update status
-            updateStatus('offline', 'Offline - Check connection');
+            updateStatus('offline', 'Offline - Cheque sua conexão');
             
             console.error('Error:', error);
             
