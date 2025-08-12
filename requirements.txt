@@ -1,0 +1,10 @@
+Flask
+flask-cors
+python-dotenv
+langchain-openai
+mcp-use
+faker
+sqlalchemy
+psycopg2
+pytest
+pytest-asyncio
