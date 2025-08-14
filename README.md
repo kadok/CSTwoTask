@@ -6,30 +6,47 @@ Neste projeto foi desenvolvida uma interface de chat para busca em uma base de d
 
 ```
 CSTwoTask/
-  app/
-    data/
-      __init__.py
-      database.py
-      models.py
-      populate.py
-    static/
-      __init__.py
-      favicon.ico
-      index.html
-      script.js
-      style.css
-    __init__.py
-    agent.py
-    config.py
-    routes.py
-  tests/
-    __init__.py
-    test_agent.py
-  .env.example
-  LICENSE.txt
-  README.md
-  requirements.txt
-  run.py
+.
+├── app
+│   ├── agent.py
+│   ├── config.py
+│   ├── data
+│   │   ├── database.py
+│   │   ├── __init__.py
+│   │   ├── models.py
+│   │   ├── populate.py
+│   │   └── __pycache__
+│   │       ├── database.cpython-312.pyc
+│   │       ├── __init__.cpython-312.pyc
+│   │       ├── models.cpython-312.pyc
+│   │       └── populate.cpython-312.pyc
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── agent.cpython-312.pyc
+│   │   ├── config.cpython-312.pyc
+│   │   ├── __init__.cpython-312.pyc
+│   │   └── routes.cpython-312.pyc
+│   ├── routes.py
+│   └── static
+│       ├── favicon.ico
+│       ├── index.html
+│       ├── __init__.py
+│       ├── script.js
+│       └── styles.css
+├── LICENSE
+├── __pycache__
+│   └── run.cpython-312.pyc
+├── README.md
+├── requirements.txt
+├── run.py
+└── tests
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-312.pyc
+    │   └── test_agent.cpython-312-pytest-8.4.1.pyc
+    └── test_agent.py
+
+9 directories, 30 files
 ```
 
 
